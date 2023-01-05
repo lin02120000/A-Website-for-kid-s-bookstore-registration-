@@ -1,0 +1,169 @@
+/*Lin Chen, Junjie Xu, Yang Xu Assignment2 - category0-5.css*/
+.title {
+    text-align: center;
+    margin: 0 auto 15px;
+    position: relative;
+    line-height: 70px;
+    color: rgb(3, 3, 176);
+    font-size: 32px;
+    font-family: 'Lucida Sans', sans-serif;
+
+}
+
+.selectbox{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    column-gap: 10px;
+    color: rgb(3, 3, 176);
+    font-size: 18px;
+}
+
+#filterbutton{
+    width:80px;
+    font-size:16px;
+    text-align:center;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(91, 147, 244);
+    color: aliceblue;
+}
+
+.flip-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2%;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+
+.flip-box-inner {
+   width: 420px;
+   height: 420px;
+   overflow: hidden;
+   background-color: black;
+   color: #ffffff;
+   cursor: pointer;
+   position: relative;
+   margin-top: 25px;
+}
+
+.flip-box-front img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: .35s;
+    border-style: ridge;
+    border: 3px  double rgb(248, 249, 249);
+}
+
+.flip-box-inner .flip-box-back{
+    position: absolute;
+    inset: 30px;
+    border: 1px rgb(248, 248, 247);
+    padding: 0 18px;
+}
+
+.flip-box-inner .flip-box-back::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    left: 100%;
+    border-left: 6px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(29, 27, 27, 0.5);
+    opacity: 0;
+    transition: 0.5s;
+    transition-delay: 0.4s;
+}
+
+.flip-box-inner .flip-box-back h4,
+.flip-box-inner .flip-box-back p{
+    margin-bottom: 6px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.flip-box-inner .flip-box-back h4{
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: large;
+    font-weight: bold;
+    transform:translate(30%, 0%);
+    transition-delay: 0.2s;
+}
+
+.flip-box-inner .flip-box-back p{
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    transform: translate(0%, 30%);;
+}
+
+.flip-box-inner:hover img{
+    opacity:0.2;
+}
+
+.flip-box-inner:hover .flip-box-back h4{
+    opacity: 1;
+    transform: translate(0% 0%);
+    transition-delay: 0.2s;
+}
+
+.flip-box-inner:hover .flip-box-back p{
+    opacity: 0.9;
+    transform: translate(0% 0%);
+    transition-delay: 0.3s;
+}
+
+.flip-box-inner:hover .flip-box-back::before{
+    background-color: rgba(255, 255, 255, 0);
+    left: 0;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+#bookname,#author{
+    color:rgb(95, 95, 95);
+    font-weight:normal;
+}
+
+.bookinfo{
+    font-family: 'Lucida Sans', sans-serif;
+    margin-left: 15px;
+}
+
+.rating{
+    color: rgb(255, 234, 0);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+
+h4 h5 p{
+    color: rgb(56, 56, 56);
+}
+
+.addtocart{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:  rgb(3, 3, 176);
+    background: transparent;
+    border:transparent;
+    text-decoration: none;
+}
+.addtocart:hover{
+    background: transparent;
+    color:  rgb(83, 83, 175);
+    border: 1px solid rgb(83, 83, 175);
+    text-decoration: underline;
+}
+
+.fa fa-shopping-cart{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.flip-box-back > .title{
+    color: #e99c2e;
+}

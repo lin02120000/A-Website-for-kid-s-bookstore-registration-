@@ -1,0 +1,334 @@
+/*Lin Chen, Junjie Xu, Yang Xu
+style assignment2*/
+
+
+/*style for header background image*/
+#imgheader {
+    width: 100%;
+    height:auto;
+    max-height: 450px;
+}
+
+/*style for navigation section*/
+.navigation {
+    display:flex;
+    background-color: rgb(140, 221, 243);
+}
+
+.navigation .navlink {
+    font:bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(120, 158, 167);
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 10px;
+    float: left;
+}
+
+.navigation a:hover {
+    background: rgb(217, 217, 243);
+}
+
+#searchbar{
+    padding:8px;
+    margin-top: 10px;
+    border:none;
+    margin-left: 50px;
+}
+
+.searchsection button{
+    height:32px;
+    width:95px;
+    font-size:16px;
+}
+
+/*title style*/
+/* #title{
+    text-align: center;
+    color: rgb(32, 75, 214);
+} */
+
+/**sign up style*/
+#signuptitle{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font: 30px;
+    color: rgb(3, 3, 176);
+}
+
+.createsection{
+    text-align: center;
+}
+
+.createcontainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.createcontainer input{
+    width:360px;
+    height:40px;
+}
+
+.createcontainer label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.checkbox{
+    margin-top: 35px;
+    font-size: large;
+    font-weight: bold;
+}
+
+#submitbn{
+    width:200px;
+    height:30px;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(91, 147, 244);
+    color: aliceblue;
+}
+
+#resetbn{
+    width:200px;
+    height:30px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(91, 147, 244);
+    color: aliceblue;
+}
+.action01{
+    width:200px;
+    height:30px;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(91, 147, 244);
+    color: aliceblue;
+}
+
+.loginsection{
+    display:grid;
+    margin-top: 20px;
+    grid-template-columns: 45% 10% 45%;
+}
+
+.logincontainer{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+#logintitle{
+    font-family: 'Courier New', Courier, monospace;
+    font: 30px;
+    color: rgb(3, 3, 176);
+}
+.logincontainer input{
+    width:360px;
+    height:40px;
+}
+
+.logincontainer label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#loginbns{
+    text-align: center;
+}
+
+#loginbn{
+    width:200px;
+    height:30px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(91, 147, 244);
+    color: aliceblue;
+}
+
+#loginreset{
+    width:200px;
+    height:30px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgb(91, 147, 244);
+    color: aliceblue;
+}
+
+/* style for signup section within login page */
+.signuplink{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.signuplink{
+    font-family: 'Courier New', Courier, monospace;
+    font: 30px;
+    color: rgb(3, 3, 176);
+    margin-bottom:70px;
+}
+
+#ca{
+    width:200px;
+    height:30px;
+    font-size:18px;
+    text-align:center;
+    border-radius: 10px;
+    background-color: rgb(91, 147, 244);
+    margin-top: 25px;
+    color: aliceblue;
+}
+
+.loginerror{
+    color: red;
+    
+}
+
+/*footer section styple*/
+#footercontainer{
+    display: grid;
+    grid-template-columns: 45% 10% 45% ;
+    background-color: rgb(211, 239, 226);
+    margin-top: 10px;
+    text-align: center;
+}
+
+#follow{
+    grid-column: 1 / 4;
+    margin-bottom: 3px;
+}
+
+#fbicon{
+    grid-column: 1 / 2;
+    text-align: right;
+}
+
+#twicon{
+    grid-column: 2 / 3;
+}
+
+#isicon{
+    grid-column: 3 / 4;
+    text-align: left;
+}
+
+#copyright{
+    grid-column: 1 / 4;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.followicon img{
+    width: 15pt;
+}
+
+/*to add responsiveness*/
+@media only screen and (max-width:1200px){
+    .navigation{
+        display:flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    #searchbar{
+        width:50%;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:992px){
+    .navigation{
+        display:flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    #searchbar{
+        width:60%;
+        position: relative;
+        margin-left: 10%;
+    }
+    .createcontainer input{
+        width:45%;
+        height:35px;
+    }
+    
+    .createcontainer label{
+        font-size: 100%;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    #submitbn{
+        display:block;
+        width:40%;
+        position:relative;
+        margin-left: 30%;
+    }
+    #resetbn{
+        display:block;
+        width:40%;
+        position:relative;
+        margin-left: 30%;
+    }
+    .action{
+        width:200px;
+        height:30px;
+        margin-top: 40px;
+        font-size: 18px;
+        border-radius: 10px;
+        background-color: rgb(91, 147, 244);
+        color: aliceblue;
+    }
+    .loginsection{
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: 65% 5% 30%;
+    }
+    .logincontainer input{
+        width:45%;
+        height:35px;
+    }
+    #loginbn{
+        display:block;
+        width:40%;
+        position:relative;
+        margin-left: 30%;
+        margin-bottom: 5px;
+    }
+    #loginreset{
+        display:block;
+        width:40%;
+        position:relative;
+        margin-left: 30%;
+    }
+    hr{
+        width: 95%;
+        height: 1px;
+        margin-top: 15px;
+    }
+    .sl{
+        margin-bottom: 2px;
+        word-wrap: break-word;
+        width:60%;
+        text-align: center;
+    }
+}
+/* style for validation error */
+.warning{
+    color:red;
+}
+
+.loginerror{
+    color:red;
+    margin: 5px;
+}
